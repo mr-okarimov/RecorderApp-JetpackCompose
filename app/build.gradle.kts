@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.ozodbek.recorderapp_jetpackcompose"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.ozodbek.recorderapp_jetpackcompose"
