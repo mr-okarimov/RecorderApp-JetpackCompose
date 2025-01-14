@@ -69,4 +69,8 @@ dependencies {
 
     //dynamic font
     implementation(libs.androidx.ui.text.google.fonts)
+
+    //icons & shapes
+    implementation(libs.material.icons.extended)
+    implementation(libs.androidx.graphics.shapes)
 }
