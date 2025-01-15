@@ -86,4 +86,7 @@ dependencies {
 
     //kotlinx serialization
     implementation(libs.kotlinx.serialization.json)
+
+    //kotlinx-datetime
+    implementation(libs.kotlinx.datetime)
 }
