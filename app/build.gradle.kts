@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.compose.compiler)
     alias(libs.plugins.ksp)
     alias(libs.plugins.hilt)
+    alias(libs.plugins.kotlinx.serialization)
 }
 
 android {
@@ -79,4 +80,16 @@ dependencies {
     ksp(libs.androidx.hilt.compiler)
     implementation(libs.hilt.android)
     implementation(libs.androidx.hilt.navigation.compose)
+
+    //navigation
+    implementation(libs.androidx.navigation.compose)
+
+    //kotlinx serialization
+    implementation(libs.kotlinx.serialization.json)
+
+    //kotlinx-datetime
+    implementation(libs.kotlinx.datetime)
+
+    //kotlinx-immutable
+    implementation(libs.kotlinx.collections.immutable)
 }
