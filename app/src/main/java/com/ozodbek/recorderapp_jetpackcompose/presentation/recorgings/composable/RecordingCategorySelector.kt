@@ -4,13 +4,13 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.itemsIndexed
-import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalInspectionMode
-import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
+import com.ozodbek.recorderapp_jetpackcompose.domain.categories.models.RecordingCategoryModel
+import com.ozodbek.recorderapp_jetpackcompose.domain.recordings.models.RecordedVoiceModel
 import kotlinx.collections.immutable.ImmutableList
 
 @Composable
@@ -50,17 +50,5 @@ fun RecordingsCategorySelector(
 				modifier = Modifier.animateItem()
 			)
 		}
-	}
-}
-
-@PreviewLightDark
-@Composable
-private fun RecordingsCategorySelectorPreview() = RecorderAppTheme {
-	Surface {
-		RecordingsCategorySelector(
-			selected = RecordingCategoryModel.ALL_CATEGORY,
-			categories = PreviewFakes.FAKE_CATEGORIES_WITH_ALL_OPTION,
-			onCategorySelect = {},
-		)
 	}
 }

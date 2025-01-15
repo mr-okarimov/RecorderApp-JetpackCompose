@@ -41,6 +41,10 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import com.ozodbek.recorderapp_jetpackcompose.R
+import com.ozodbek.recorderapp_jetpackcompose.common.LocalTimeFormats.NOTIFICATION_TIMER_TIME_FORMAT
+import com.ozodbek.recorderapp_jetpackcompose.common.LocalTimeFormats.RECORDING_RECORD_TIME_FORMAT
+import com.ozodbek.recorderapp_jetpackcompose.domain.recordings.models.RecordedVoiceModel
+import com.ozodbek.recorderapp_jetpackcompose.ui.theme.RecorderAppTheme
 import kotlinx.datetime.format
 
 @OptIn(ExperimentalFoundationApi::class)
@@ -169,42 +173,3 @@ fun RecordingCard(
 		}
 	}
 }
-
-@PreviewLightDark
-@Composable
-private fun RecordingCardNormalPreview() = RecorderAppTheme {
-	RecordingCard(
-		music = PreviewFakes.FAKE_VOICE_RECORDING_MODEL,
-		onItemClick = {},
-		onItemSelect = {},
-		modifier = Modifier.fillMaxWidth()
-	)
-}
-
-@PreviewLightDark
-@Composable
-private fun RecordingCardSelectModePreview() = RecorderAppTheme {
-	RecordingCard(
-		music = PreviewFakes.FAKE_VOICE_RECORDING_MODEL,
-		onItemClick = {},
-		onItemSelect = {},
-		isSelectable = true,
-		modifier = Modifier.fillMaxWidth(),
-	)
-}
-
-
-@PreviewLightDark
-@Composable
-private fun RecordingCardSelectedPreview() = RecorderAppTheme {
-	RecordingCard(
-		music = PreviewFakes.FAKE_VOICE_RECORDING_MODEL.copy(isFavorite = true),
-		isSelectable = true,
-		isSelected = true,
-		onItemClick = {},
-		onItemSelect = {},
-		modifier = Modifier.fillMaxWidth(),
-	)
-}
-
-

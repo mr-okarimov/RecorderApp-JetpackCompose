@@ -89,4 +89,7 @@ dependencies {
 
     //kotlinx-datetime
     implementation(libs.kotlinx.datetime)
+
+    //kotlinx-immutable
+    implementation(libs.kotlinx.collections.immutable)
 }

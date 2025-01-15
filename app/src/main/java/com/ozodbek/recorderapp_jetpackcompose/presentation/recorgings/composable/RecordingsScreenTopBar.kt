@@ -215,24 +215,3 @@ fun animateTopBar(): ContentTransform {
 class BooleanPreviewParams :
 	CollectionPreviewParameterProvider<Boolean>(listOf(true, false))
 
-
-@OptIn(ExperimentalMaterial3Api::class)
-@PreviewLightDark
-@Composable
-private fun RecordingsTopBarSelectedPreview(
-	@PreviewParameter(BooleanPreviewParams::class)
-	isSelectedMode: Boolean,
-) = RecorderAppTheme {
-	RecordingsScreenTopBar(
-		isSelectedMode = isSelectedMode,
-		selectedCount = 10,
-		onUnSelectAll = {},
-		onSelectAll = { },
-		navigation = {
-			Icon(
-				imageVector = Icons.AutoMirrored.Default.ArrowBack,
-				contentDescription = stringResource(R.string.back_arrow)
-			)
-		}
-	)
-}

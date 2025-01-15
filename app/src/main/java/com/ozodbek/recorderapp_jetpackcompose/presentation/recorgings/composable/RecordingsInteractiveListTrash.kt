@@ -17,7 +17,6 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.derivedStateOf
@@ -30,9 +29,12 @@ import androidx.compose.ui.platform.LocalInspectionMode
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
+import com.ozodbek.recorderapp_jetpackcompose.presentation.composables.ListLoadingAnimation
 import com.ozodbek.recorderapp_jetpackcompose.R
+import com.ozodbek.recorderapp_jetpackcompose.domain.recordings.models.RecordedVoiceModel
+import com.ozodbek.recorderapp_jetpackcompose.domain.recordings.models.TrashRecordingModel
+import com.ozodbek.recorderapp_jetpackcompose.presentation.recorgings.util.state.SelectableTrashRecordings
 import kotlinx.collections.immutable.ImmutableList
 
 @OptIn(ExperimentalFoundationApi::class)
@@ -140,15 +142,3 @@ private fun TrashInfoCard(modifier: Modifier = Modifier) {
 	}
 }
 
-@PreviewLightDark
-@Composable
-private fun RecordingsInteractiveListTrashRecordingsPreview() = RecorderAppTheme {
-	Surface {
-		RecordingsInteractiveList(
-			isRecordingsLoaded = true,
-			recordings = PreviewFakes.FAKE_TRASH_RECORDINGS_MODELS,
-			onItemSelect = {},
-			contentPadding = PaddingValues(10.dp)
-		)
-	}
-}
