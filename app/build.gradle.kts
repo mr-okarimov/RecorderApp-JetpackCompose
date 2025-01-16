@@ -96,4 +96,8 @@ dependencies {
     //lifecycle
     implementation(libs.androidx.lifecycle.runtime.compose)
     implementation(libs.androidx.lifecycle.service)
+
+    //work manager
+    implementation(libs.work.runtime.ktx)
+    implementation(libs.androidx.hilt.work)
 }
