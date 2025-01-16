@@ -10,7 +10,7 @@ import dagger.hilt.android.HiltAndroidApp
 
 
 @HiltAndroidApp
-class RecorderApp : Application() {
+class RecorderApplication : Application() {
 
     private val notificationManager by lazy { getSystemService<NotificationManager>() }
 
