@@ -100,4 +100,9 @@ dependencies {
     //work manager
     implementation(libs.work.runtime.ktx)
     implementation(libs.androidx.hilt.work)
+
+    //datastore
+    implementation(libs.androidx.datastore)
+    implementation(libs.protobuf.javalite)
+    implementation(libs.protobuf.kotlin.lite)
 }
