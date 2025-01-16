@@ -2,6 +2,7 @@ package com.ozodbek.recorderapp_jetpackcompose.presentation.navigation.routes
 
 
 
+import android.content.Intent
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.ContentTransform
 import androidx.compose.animation.core.EaseInCubic
@@ -27,7 +28,9 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.compose.dropUnlessResumed
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
+import androidx.navigation.navDeepLink
 import com.ozodbek.recorderapp_jetpackcompose.R
+import com.ozodbek.recorderapp_jetpackcompose.presentation.navigation.util.NavDeepLinks
 import com.ozodbek.recorderapp_jetpackcompose.presentation.navigation.util.NavRoutes
 import com.ozodbek.recorderapp_jetpackcompose.presentation.navigation.util.animatedComposable
 import com.ozodbek.recorderapp_jetpackcompose.presentation.recorder.RecorderServiceBinder
@@ -37,6 +40,12 @@ import com.ozodbek.recorderapp_jetpackcompose.presentation.recorder.VoiceRecorde
 fun NavGraphBuilder.recorderRoute(
     navController: NavHostController,
 ) = animatedComposable<NavRoutes.VoiceRecorder>(
+    deepLinks = listOf(
+        navDeepLink {
+            uriPattern = NavDeepLinks.recorderDestinationPattern
+            action = Intent.ACTION_VIEW
+        },
+    ),
 ) {
 
     val viewModel = hiltViewModel<RecorderViewModel>()

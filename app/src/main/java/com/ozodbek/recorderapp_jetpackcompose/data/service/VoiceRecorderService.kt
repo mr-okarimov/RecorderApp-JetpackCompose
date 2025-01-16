@@ -8,14 +8,10 @@ import android.util.Log
 import android.widget.Toast
 import androidx.lifecycle.LifecycleService
 import androidx.lifecycle.lifecycleScope
-import com.eva.recorderapp.R
+import com.ozodbek.recorderapp_jetpackcompose.R
 import com.ozodbek.recorderapp_jetpackcompose.common.NotificationConstants
-import com.eva.recorderapp.common.Resource
-import com.eva.recorderapp.common.roundToClosestSeconds
-import com.eva.recorderapp.voice_recorder.domain.bookmarks.RecordingBookmarksProvider
-import com.eva.recorderapp.voice_recorder.domain.use_cases.BluetoothScoUseCase
-import com.eva.recorderapp.voice_recorder.domain.use_cases.PhoneStateObserverUsecase
-import com.eva.recorderapp.voice_recorder.domain.util.AppWidgetsRepository
+import com.ozodbek.recorderapp_jetpackcompose.common.Resource
+import com.ozodbek.recorderapp_jetpackcompose.common.roundToClosestSeconds
 import com.ozodbek.recorderapp_jetpackcompose.domain.recorder.emums.RecorderAction
 import com.ozodbek.recorderapp_jetpackcompose.domain.recorder.emums.RecorderState
 import com.ozodbek.recorderapp_jetpackcompose.presentation.navigation.util.NavRoutes
