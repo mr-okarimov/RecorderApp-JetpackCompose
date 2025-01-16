@@ -163,17 +163,3 @@ fun RecordingsBottomBar(
 		)
 	}
 }
-
-@PreviewLightDark
-@Composable
-private fun RecordingsBottomBarPreview(
-	@PreviewParameter(BooleanPreviewParams::class)
-	showRename: Boolean,
-) = RecorderAppTheme {
-	RecordingsBottomBar(
-		isVisible = true,
-		showRename = showRename,
-		onShareSelected = {},
-		onItemDelete = {}
-	)
-}

@@ -109,11 +109,3 @@ fun TrashRecordingsCard(
 }
 
 
-@PreviewLightDark
-@Composable
-private fun TrashRecordingsCardPreview() = RecorderAppTheme {
-	TrashRecordingsCard(
-		trashRecording = PreviewFakes.FAKE_TRASH_RECORDINGS_MODEL,
-		onClick = { },
-	)
-}

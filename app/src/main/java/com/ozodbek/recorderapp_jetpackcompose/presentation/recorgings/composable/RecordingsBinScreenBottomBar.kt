@@ -9,7 +9,7 @@ import androidx.compose.material3.BottomAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.PreviewLightDark
-import com.eva.recorderapp.ui.theme.RecorderAppTheme
+import com.ozodbek.recorderapp_jetpackcompose.ui.theme.RecorderAppTheme
 
 @Composable
 fun RecordingsBinScreenBottomBar(

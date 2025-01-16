@@ -12,7 +12,6 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.derivedStateOf
@@ -25,10 +24,12 @@ import androidx.compose.ui.platform.LocalInspectionMode
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.dp
+import com.ozodbek.recorderapp_jetpackcompose.presentation.composables.ListLoadingAnimation
 import com.ozodbek.recorderapp_jetpackcompose.R
+import com.ozodbek.recorderapp_jetpackcompose.domain.categories.models.RecordingCategoryModel
+import com.ozodbek.recorderapp_jetpackcompose.domain.recordings.models.RecordedVoiceModel
+import com.ozodbek.recorderapp_jetpackcompose.presentation.recorgings.util.state.SelectableRecordings
 import kotlinx.collections.immutable.ImmutableList
 
 @Composable
@@ -113,22 +114,6 @@ fun RecordingsInteractiveList(
 					)
 				}
 			},
-		)
-	}
-}
-
-@PreviewLightDark
-@Composable
-private fun RecordingsInteractiveListRecordingsPreview() = RecorderAppTheme {
-	Surface {
-		RecordingsInteractiveList(
-			isRecordingsLoaded = true,
-			selectedCategory = RecordingCategoryModel.ALL_CATEGORY,
-			categories = PreviewFakes.FAKE_CATEGORIES_WITH_ALL_OPTION,
-			recordings = PreviewFakes.FAKE_VOICE_RECORDING_MODELS,
-			onCategorySelect = {},
-			onItemClick = {},
-			onItemSelect = {}
 		)
 	}
 }

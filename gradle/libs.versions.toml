@@ -17,6 +17,7 @@ hiltNavigation = "1.2.0"
 navigationCompose = "2.8.5"
 kotlinxSerializationJson = "1.7.3"
 kotlinxDatetime = "0.6.1"
+kotlinxCollectionsImmutable = "0.3.8"
 
 
 [libraries]
@@ -44,6 +45,7 @@ androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-com
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
 kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinxDatetime" }
+kotlinx-collections-immutable = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable", version.ref = "kotlinxCollectionsImmutable" }
 
 
 [plugins]

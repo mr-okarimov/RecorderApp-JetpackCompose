@@ -17,6 +17,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.ozodbek.recorderapp_jetpackcompose.R
+import com.ozodbek.recorderapp_jetpackcompose.domain.categories.models.RecordingCategoryModel
+import com.ozodbek.recorderapp_jetpackcompose.presentation.util.colorRes
+import com.ozodbek.recorderapp_jetpackcompose.presentation.util.imageVector
 
 @Composable
 fun RecordingCategoryChipSelectorChip(
