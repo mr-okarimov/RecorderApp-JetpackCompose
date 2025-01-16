@@ -92,4 +92,8 @@ dependencies {
 
     //kotlinx-immutable
     implementation(libs.kotlinx.collections.immutable)
+
+    //lifecycle
+    implementation(libs.androidx.lifecycle.runtime.compose)
+    implementation(libs.androidx.lifecycle.service)
 }

@@ -30,6 +30,7 @@ import androidx.navigation.NavHostController
 import com.ozodbek.recorderapp_jetpackcompose.R
 import com.ozodbek.recorderapp_jetpackcompose.presentation.navigation.util.NavRoutes
 import com.ozodbek.recorderapp_jetpackcompose.presentation.navigation.util.animatedComposable
+import com.ozodbek.recorderapp_jetpackcompose.presentation.recorder.RecorderServiceBinder
 import com.ozodbek.recorderapp_jetpackcompose.presentation.recorder.RecorderViewModel
 import com.ozodbek.recorderapp_jetpackcompose.presentation.recorder.VoiceRecorderScreen
 
