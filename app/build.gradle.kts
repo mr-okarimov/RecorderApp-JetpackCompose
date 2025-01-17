@@ -116,6 +116,9 @@ dependencies {
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
     ksp(libs.androidx.room.compiler)
+
+    //splash
+    implementation(libs.androidx.core.splashscreen)
 }
 
 
