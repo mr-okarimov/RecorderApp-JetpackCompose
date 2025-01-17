@@ -24,6 +24,7 @@ protobufJavalite = "4.28.2"
 protobuf_version = "0.9.4"
 datastore = "1.1.2"
 roomCompiler = "2.6.1"
+coreSplashscreen = "1.0.1"
 
 
 [libraries]
@@ -64,6 +65,8 @@ protobuf-kotlin-lite = { module = "com.google.protobuf:protobuf-kotlin-lite", ve
 androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomCompiler" }
 androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomCompiler" }
 androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomCompiler" }
+#splash
+androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
