@@ -9,6 +9,7 @@ import androidx.media3.session.MediaController
 import androidx.media3.session.SessionError
 import androidx.media3.session.SessionToken
 import com.ozodbek.recorderapp_jetpackcompose.common.Resource
+import com.ozodbek.recorderapp_jetpackcompose.data.service.MediaPlayerService
 import com.ozodbek.recorderapp_jetpackcompose.domain.player.AudioFilePlayer
 import com.ozodbek.recorderapp_jetpackcompose.domain.player.model.AudioFileModel
 import com.ozodbek.recorderapp_jetpackcompose.domain.player.model.PlayerMetaData
@@ -22,6 +23,8 @@ import kotlinx.coroutines.flow.emptyFlow
 import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.withContext
+import androidx.concurrent.futures.await
+
 
 private const val TAG = "MEDIA_CONTROLLER_PROVIDER"
 
